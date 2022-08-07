@@ -1,7 +1,9 @@
 import * as React from "react";
 
-const Greeting = () => {
-  return <h1>Good bye!</h1>;
+const Greeting = (props) => {
+  return (
+    <h1>{props.name ? "Welcome back " + props.name + "!" : "Welcome!"}</h1>
+  );
 };
 
 export default Greeting;
